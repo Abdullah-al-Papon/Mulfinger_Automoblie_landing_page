@@ -1,0 +1,48 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+    font-family: $sansSerif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.45em;
+    color: $textColor;
+}
+
+html {
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $serif;
+}
+
+.main{
+background:#fff;
+margin:0 auto;
+display:block;
+}
+
+h1 {
+    color: $mainColor;
+}
+h2 {
+    color: $mainColor;
+}
+h3 {
+    color:  $textColor;
+}
+a {
+    color: $mainColor;
+    text-decoration:  none;
+}
+ul.nav a {
+    text-decoration:  none;
+}
+a:hover {
+    color: $mainColor;
+    text-decoration:  none;
+}

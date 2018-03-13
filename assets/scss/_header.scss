@@ -1,0 +1,31 @@
+nav.navbar{
+	padding: 5px 5px;
+
+	a.navbar-brand{
+		width: 340px;
+    	height: 70px;
+    	padding: 2px 0;
+    	img{
+    		width: 100%;
+    	}
+	}
+  	ul{
+		li{
+			a{
+				font-size: 1.5em;
+				padding: 30px 15px;
+				color: $otherTextColor;
+				font-weight: 700;
+				text-transform: uppercase;
+				display: block;
+				&:hover{
+					color: $textColor;
+				}
+
+			}	
+		}
+		#icon a{
+			padding: 10px 0px 20px 15px;
+		}
+	}
+}
