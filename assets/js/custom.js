@@ -16,7 +16,7 @@ $(document).ready(function(){
     $('#Infoportal .nav-tabs a[data-toggle="tab"] ').on('shown.bs.tab', function (e) {
         var href = $(this).attr('href');
         $('html, body').animate({
-            scrollTop: $(href).offset().top
+            scrollTop: $(href).offset().top-100
         }, 'slow');
         e.preventDefault();
     });
@@ -38,7 +38,7 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         responsiveClass:true,
-        navText : ["<i class='fas fa-chevron-left'></i>","<i class='fas fa-chevron-right'></i>"],
+        navText : ["",""],
         responsive:{
             0:{
                 items:1,
@@ -55,6 +55,37 @@ $(document).ready(function(){
             }
         }
     })
+
+
+
+    /*====Striky Navbar====*/
+  
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 50){  
+        $('header > nav').addClass("sticky");
+      }
+      else{
+        $('header > nav').removeClass("sticky");
+      }
+    });
+
+
+    /*====Smooth Scrolling====*/
+   $("#carbonNavbar ul li a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+        var hash = this.hash;
+
+        $('html, body').animate({
+           scrollTop: $(hash).offset().top
+        }, 1000, function(){
+
+           // when done, add hash to url
+           // (default click behaviour)
+           window.location.hash = hash;
+         });
+
+    });
+
 
   
 

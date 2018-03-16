@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     display: block;
     font-family: $sansSerif;
@@ -11,38 +10,26 @@ body {
     font-weight: 400;
     line-height: 1.45em;
     color: $textColor;
+    padding-top: 100px;
 }
 
 html {
     font-size: 16px;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: $serif;
-}
-
-.main{
-background:#fff;
-margin:0 auto;
-display:block;
-}
-
-h1 {
+h1, h2, h3  {
     color: $mainColor;
-}
-h2 {
-    color: $mainColor;
-}
-h3 {
-    color:  $textColor;
+    margin: 0;
 }
 a {
     color: $mainColor;
     text-decoration:  none;
-}
-ul.nav a {
-    text-decoration:  none;
+    transition: all .092s ease-in 0s;
 }
 a:hover {
     color: $mainColor;
     text-decoration:  none;
+}
+
+.borderR {
+    border-right: 1px solid #eee;
 }

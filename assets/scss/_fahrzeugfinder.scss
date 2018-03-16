@@ -1,0 +1,73 @@
+#Fahrzeugfinder{
+	padding: 100px 0;
+
+	.idicator-head{
+		font-family: $serif;
+		background: url("../img/Fahrzeugfinder-BgTop.png") no-repeat;
+		background-position: top center;
+		padding: 50px 0 50px 5%;
+		h3{
+			color: $textColor4;
+			font-size: 1.5em;
+		}
+		h4{
+			color: $mainColor;
+			font-size: 1.5em;
+		}
+	}
+
+
+
+	/*Fahrzeugfinder Content Carosel*/
+	.carousel-caption{
+	    color: #00ffff;
+	}
+
+	.carousel-control-prev {
+	    left: 30px;
+
+	}
+	.carousel-control-next {
+	    right: 30px;
+	}
+	.carousel-control-next, .carousel-control-prev {
+	    position: absolute;
+	    top: 50%;
+	    bottom: 0;
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: inherit;
+	    -webkit-box-align: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    width: 50px;
+	    color: #fff;
+	    text-align: center;
+	    opacity: .5;
+	    height: 70px;
+	}
+
+}
+/*Owl Caro*/
+
+.owl-prev{
+    left: -30px;
+    background: url("../img/Arrow-Left.png") no-repeat;
+    background-size: 100% 100%;
+}
+.owl-next{
+    background: url(../img/Arrow-Right.png) no-repeat;
+    right: -30px;
+	background-size: 100% 100%;
+}
+.owl-prev, .owl-next{
+	position: absolute;
+	top: 25%;
+    height: 35.56px;
+    width: 18.33px;
+}
+
+

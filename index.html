@@ -11,20 +11,20 @@
 	  <link href="assets/css/owl.carousel.min.css" rel="stylesheet"/>
 	  <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
 
-	  <link rel="stylesheet" href="assets/css/custom.css"  />
+	  <link rel="stylesheet" href="assets/css/custom.min.css"  />
 	  	
 
 	  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   </head>
   
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 	
 	<div class="main">
 		
 
 		<!-- == Header==-->
-		<header>        
+		<header class="fixed-top">        
 	      <nav class="navbar navbar-expand-md navbar-light">            
 	        <div class="container-fluid">                
 	            <a class="navbar-brand" href="#"><img class="logo" alt="Mulfinger Automobile" src="assets/img/Mulfinger-Automobile-Logo.svg" width="150px" /></a>
@@ -34,12 +34,12 @@
 
 	            <div class="collapse navbar-collapse " id="carbonNavbar">                    
 		            <ul class="navbar-nav ml-auto">                                                    
-		              <li class="active"><a href="#Infoportal">Infoportal</a></li>                                                        
-		              <li><a href="#FAQ">FAQ</a></li>                                                        
-		              <li><a href="#Fahrzeugfinder">Fahrzeugfinder</a></li>                                                        
-		              <li><a href="#Newsletter-Anmeldung">News</a></li>                                                    
-		              <li id="icon">
-		              	<a href="#Fahrzeugfinder">
+		              <li class="nav-item"><a class="nav-link" href="#Infoportal">Infoportal</a></li>                                                        
+		              <li class="nav-item"><a class="nav-link" href="#FAQ">FAQ</a></li>                                                        
+		              <li class="nav-item"><a class="nav-link" href="#Fahrzeugfinder">Fahrzeugfinder</a></li>                                                        
+		              <li class="nav-item"><a class="nav-link" href="#Newsletter-Anmeldung">News</a></li>                                                    
+		              <li class="nav-item" id="icon">
+		              	<a  class="nav-link" href="#Fahrzeugfinder">
 		                  <img alt="Mulfinger Gewerbeportal | Infos, Tipps und Angebote zu gewerblichen Autos" src="assets/img/Fahrzeugfinder-Icon.png" />
 		                </a>
 		              </li>                    
@@ -52,11 +52,13 @@
 		<!--Welcome-->
 	    <section id="welcome" style="background-image:url(assets/img/header.jpg)">
 	    	<div class="container">
-		    	<h2>GEWERBE <br>PORTAL</h2>
-		    	<p>selbständig? dann sichern sie sich jetzt alle vorteile!</p>
+	    		<div class="wContent">
+			    	<h2>GEWERBE<span>PORTAL</span></h2>
+			    	<p>selbständig? dann sichern sie sich jetzt alle vorteile!</p>
 
-		    	<div class="box-btn">
-	              	<a href="#Newsletter-Anmeldung">Erhalten Sie monatlich Top-Angebote. <br><strong> Jetzt abonnieren!</strong> &gt;</a>
+			    	<div class="box-btn">
+		              	<a href="#Newsletter-Anmeldung">Erhalten Sie monatlich Top-Angebote. <br><strong> Jetzt abonnieren!</strong> &gt;</a>
+		            </div>
 	            </div>
             </div>
 	    </section>
@@ -65,66 +67,70 @@
 	    <section id="Infoportal">
 	    	<div class="container">
 		    	<div class="row">
-			    	<div class="col-md-8">
-			    		<h1>&bdquo; Das Portal für alle Informationen rund um das Thema Fahrzeugkauf für Selbständige und Gewerbetreibende.&ldquo;</h1>
+			    	<div class="col-md-8 borderR">
+			    		<div class="infoSec">
+				    		<h1>&bdquo; Das Portal für alle Informationen rund um das Thema Fahrzeugkauf für Selbständige und Gewerbetreibende.&ldquo;</h1>
 
-			    		<h3>Schnelleinstieg</h3>
-			    		<div class="row">
-							<div class="col-md-4">
-								<img src="assets/img/Schnelleinstieg-Image-1.jpg" alt="Steuervorteile"/>
-								<h4>Vorteile &amp; Absetzbarkeit</h4>
-								<ul class="nav nav-tabs">
-								    <li><a data-toggle="tab" href="#Vorteile">Vorteile eines gewerblichen Fahrzeugs</a></li>
-									<li><a data-toggle="tab" href="#Absetzbarkeit">Was kann man absetzen?</a></li>
-									<li><a data-toggle="tab" href="#Umsatzsteuer">Vor- und Umsatzsteuer</a></li>
-									<li><a data-toggle="tab" href="#Nutzungsanteile">Nutzungsanteile</a></li>
-									<li><a data-toggle="tab" href="#Nachweismethoden">Nachweismethoden</a></li>
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<img src="assets/img/Schnelleinstieg-Image-2.jpg" alt="Auto finanzieren oder leasen"/>
-								<h4>Leasing &amp; Finanzierung</h4>
-								<ul class="nav nav-tabs">
-								  <li><a data-toggle="tab" href="#Vorteile_Finanzierung">Vorteile Finanzierung</a></li>
-								  <li><a data-toggle="tab" href="#Vorteile_Leasing">Vorteile Leasing</a></li>
-								  <li><a data-toggle="tab" href="#Restwert">Restwert &amp; Ratenhöhe</a></li>
-								  <li><a data-toggle="tab" href="#Definitionen">Definitionen &amp; Erläuterungen</a></li>
-								  <!--<li>
-								  <a href="#Fahrzeugfinder">Angebote</a>
-								  </li>-->
-								</ul>
-							</div>
-							<div class="col-md-4">
-								<img alt="Fahrzeugtipps" src="assets/img/Schnelleinstieg-Image-3.jpg" />
-								<h4>Der ideale Wagen</h4>
-								<ul class="nav nav-tabs">
-								  <li><a data-toggle="tab" href="#Beduerfnisse">Meine Bedürfnisse</a></li>
-								  <li><a data-toggle="tab" href="#Moeglichkeiten">Meine Möglichkeiten</a></li>
-								  <li><a data-toggle="tab" href="#Foerderung">Förderung und Prämien</a></li>
-								  <li><a data-toggle="tab" href="#Beratung">Persönliche Beratung</a></li>
-								  <!--<li>
-								  <a href="#Fahrzeugfinder">Fahrzeugfinder</a>
-								  </li>-->
-								</ul>
-							</div>
+				    		<h3>Schnelleinstieg</h3>
+				    		<div class="row">
+								<div class="col-md-4">
+									<img src="assets/img/Schnelleinstieg-Image-1.jpg" alt="Steuervorteile"/>
+									<h4>Vorteile &amp; Absetzbarkeit</h4>
+									<ul class="nav nav-tabs">
+									    <li><a data-toggle="tab" href="#Vorteile">Vorteile eines gewerblichen Fahrzeugs</a></li>
+										<li><a data-toggle="tab" href="#Absetzbarkeit">Was kann man absetzen?</a></li>
+										<li><a data-toggle="tab" href="#Umsatzsteuer">Vor- und Umsatzsteuer</a></li>
+										<li><a data-toggle="tab" href="#Nutzungsanteile">Nutzungsanteile</a></li>
+										<li><a data-toggle="tab" href="#Nachweismethoden">Nachweismethoden</a></li>
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<img src="assets/img/Schnelleinstieg-Image-2.jpg" alt="Auto finanzieren oder leasen"/>
+									<h4>Leasing &amp; Finanzierung</h4>
+									<ul class="nav nav-tabs">
+									  <li><a data-toggle="tab" href="#Vorteile_Finanzierung">Vorteile Finanzierung</a></li>
+									  <li><a data-toggle="tab" href="#Vorteile_Leasing">Vorteile Leasing</a></li>
+									  <li><a data-toggle="tab" href="#Restwert">Restwert &amp; Ratenhöhe</a></li>
+									  <li><a data-toggle="tab" href="#Definitionen">Definitionen &amp; Erläuterungen</a></li>
+									  <!--<li>
+									  <a href="#Fahrzeugfinder">Angebote</a>
+									  </li>-->
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<img alt="Fahrzeugtipps" src="assets/img/Schnelleinstieg-Image-3.jpg" />
+									<h4>Der ideale Wagen</h4>
+									<ul class="nav nav-tabs">
+									  <li><a data-toggle="tab" href="#Beduerfnisse">Meine Bedürfnisse</a></li>
+									  <li><a data-toggle="tab" href="#Moeglichkeiten">Meine Möglichkeiten</a></li>
+									  <li><a data-toggle="tab" href="#Foerderung">Förderung und Prämien</a></li>
+									  <li><a data-toggle="tab" href="#Beratung">Persönliche Beratung</a></li>
+									  <!--<li>
+									  <a href="#Fahrzeugfinder">Fahrzeugfinder</a>
+									  </li>-->
+									</ul>
+								</div>
+				            </div>
 			            </div>
 			    	</div>
 			    	<div class="col-md-4">
-			            <h3>Themenwolke</h3>
-			            <ul class="nav nav-tabs">
-			              <li><a data-toggle="tab" href="#Vorteile">#Gewerbeauto</a></li>
-			              <li><a data-toggle="tab" href="#Absetzbarkeit">#Steuervorteil</a></li>
-			              <li><a data-toggle="tab" href="#Umsatzsteuer">#Vorsteuer</a></li>
-			              <li><a data-toggle="tab" href="#Nutzungsanteile">#Privatanteil</a></li>
-			              <li><a data-toggle="tab" href="#Vorteile_Finanzierung">#Finanzierungsvorteile</a></li>
-			              <li><a data-toggle="tab" href="#Vorteile_Leasing">#Leasing</a></li>
-			              <li><a data-toggle="tab" href="#Beduerfnisse">#Mein Firmenauto</a></li>
-			              <li><a data-toggle="tab" href="#Foerderung">#Förderung</a></li>
-			              <li><a data-toggle="tab" href="#Beratung">#Beratung</a></li>
-			              <li><a data-toggle="tab" href="#Nachweismethoden">#1%-Regel</a></li>
-			              <li><a data-toggle="tab" href="#collapse_07">#Fahrtenbuch</a></li> <!-- BEISPIEL FUER COLLAPSE IN FAQs -->
-			              <li><a data-toggle="tab" href="#Fahrzeugfinder">#Fahrzeugangebote</a></li>     <!-- BEISPIEL FÜR DRITT-LINK -->
-			            </ul>
+			    		<div class="infoTags">
+				            <h3>Themenwolke</h3>
+				            <ul class="nav nav-tabs">
+				              <li><a data-toggle="tab" href="#Vorteile">#Gewerbeauto</a></li>
+				              <li><a data-toggle="tab" href="#Absetzbarkeit">#Steuervorteil</a></li>
+				              <li><a data-toggle="tab" href="#Umsatzsteuer">#Vorsteuer</a></li>
+				              <li><a data-toggle="tab" href="#Nutzungsanteile">#Privatanteil</a></li>
+				              <li><a data-toggle="tab" href="#Vorteile_Finanzierung">#Finanzierungsvorteile</a></li>
+				              <li><a data-toggle="tab" href="#Vorteile_Leasing">#Leasing</a></li>
+				              <li><a data-toggle="tab" href="#Beduerfnisse">#Mein Firmenauto</a></li>
+				              <li><a data-toggle="tab" href="#Foerderung">#Förderung</a></li>
+				              <li><a data-toggle="tab" href="#Beratung">#Beratung</a></li>
+				              <li><a data-toggle="tab" href="#Nachweismethoden">#1%-Regel</a></li>
+				              <li><a data-toggle="tab" href="#collapse_07">#Fahrtenbuch</a></li> <!-- BEISPIEL FUER COLLAPSE IN FAQs -->
+				              <li><a data-toggle="tab" href="#Fahrzeugfinder">#Fahrzeugangebote</a></li>     <!-- BEISPIEL FÜR DRITT-LINK -->
+				            </ul>
+			            </div>
 		            </div>
 	            </div>
             </div>
@@ -323,124 +329,122 @@
 
 	            </div>
 	        </div>
-	    </section>
 
-	    <section id="Kontakt">
-			<div class="container">
-				<div class="row justify-content-center">     
-					<div class="col-sm-12 col-md-6"">                            
+	        <div id="Kontakt">
+				<div class="container">
+					<div class="row justify-content-center">     
+						<div class="col-sm-12 col-md-6"">                            
 
-						<h2>Persönlicher Kontakt und Beratung</h2>                            
-					  	<p>Sie haben etwas nicht gefunden oder noch Fragen? <br>Wir beraten Sie gerne. Persönlich und kostenlos.</p>                            
-					  <div class="row">                                
-					    <div class="col-12">                                
-					      <div class="icons">
-					        <a href="#Kontakt_AP" class="phone">Telefon-<br />service</a>                                
-					        <a href="mailto:info@mulfinger-gewerbeportal.de" class="mail">E-Mail<br />Kontakt</a>                                
-					        <a href="#Standorte" class="map">Beratung<br />vor Ort</a>                                
-					        <a href="#Newsletter-Anmeldung" class="news">Newsletter <br/>Anmeldung</a>                                
-					      </div>                                
-					    </div>                            
-					  </div>                        
-					</div>                    
+							<h2>Persönlicher Kontakt und Beratung</h2>                            
+						  	<p>Sie haben etwas nicht gefunden oder noch Fragen? <br>Wir beraten Sie gerne. Persönlich und kostenlos.</p>                            
+						  <div class="row">                                
+						    <div class="col-12">                                
+						      <div class="icons">
+						        <a href="#Kontakt_AP" class="phone">Telefon-<br />service</a>                                
+						        <a href="mailto:info@mulfinger-gewerbeportal.de" class="mail">E-Mail<br />Kontakt</a>                                
+						        <a href="#Standorte" class="map">Beratung<br />vor Ort</a>                                
+						        <a href="#Newsletter-Anmeldung" class="news">Newsletter <br/>Anmeldung</a>                                
+						      </div>                                
+						    </div>                            
+						  </div>                        
+						</div>                    
+					</div>
+	         	</div>
+		    </div>
+
+
+		    <!--Testimony Carosel-->
+		    <div id="testimony">
+
+				<div id="testcar" class="carousel slide" data-ride="carousel">                                                   
+					<!-- Wrapper for slides -->                            
+					<div class="carousel-inner" role="listbox">                                
+					  				  
+					<!-- Testimonial -->
+					  <div class="carousel-item active">                                    
+					    <img src="assets/img/Testimonials/Testimonial_MINI.jpg" alt="MINI">                                    
+					    <div class="carousel-caption">                                                                            
+					      <div class="inner">                                            
+					        <h3>Genau richtig für ein Start-Up.</h3>                                            
+					        <p>Attraktiv, frech und dynamisch – so möchte ich mein Start-Up positionieren. Und der  <span style="font-weight:bold;">MINI 5-Türer</span>
+					            verköpert diese Eigenschaften perfekt und durch die attraktiven Raten konnte ich mir sofort bei Gründung den
+					            idealen Wagen für mich zulegen.</p>                                            
+					        <h4>MINI 5-Türer</h4>                                      
+					      </div>                                    
+					    </div>                                
+					  </div>                                
+					<!-- Testimonial Ende -->              
+					  
+					<!-- Testimonial -->
+					  <div class="carousel-item">                                    
+					    <img src="assets/img/Testimonials/Testimonial_1er.jpg" alt="BMW 1er">                                    
+					    <div class="carousel-caption">                                                                            
+					      <div class="inner">                                            
+					        <h3>Für einen sportlich-dynamischen Eindruck.</h3>                                            
+					        <p>Als junger Unternehmer ist die richtige Außenwirkung sehr wichtig.  Dabei unterstützt 
+					            mich der <span style="font-weight:bold;">BMW 1er</span> perfekt: Er sorgt für einen sportlichen und modernen Auftritt bei meinen Kunden. 
+					            Denn man sollte nie den Gesamteindruck unterschätzen, den man hinterlässt!</p>              
+					        <h4>BMW 1er</h4>                                                          
+					      </div>                                    
+					    </div>                                
+					  </div>                                
+					<!-- Testimonial Ende --> 
+
+					<!-- Testimonial -->
+					  <div class="carousel-item">                                    
+					    <img src="assets/img/Testimonials/Testimonial_3er.jpg" alt="BMW 3er">                                    
+					    <div class="carousel-caption">                                                                            
+					      <div class="inner">                                            
+					        <h3>Der Alleskönner von BMW.</h3>                                            
+					        <p>In vielen Berufen braucht man einen Alleskönner. Geräumig und perfekt im Dauereinsatz 
+					            macht der  <span style="font-weight:bold;">BMW 3er Touring</span> alles mit. Das geräumige Interieur mit vielen Ablagemöglichkeiten 
+					            macht jede Fahrt zum Kunden zu einem Kinderspiel und kombiniert dadabei
+					            Funktionalität und Fahrfreude perfekt.</p>                                            
+					        <h4>BMW 3er &amp BMW 3er Touring</h4>
+					                                           
+					      </div>                                    
+					    </div>                                
+					  </div>                                
+					<!-- Testimonial Ende -->
+
+					<!-- Testimonial -->
+					  <div class="carousel-item">                                    
+					    <img src="assets/img/Testimonials/Testimonial_5er.jpg" alt="BMW 5er">                                    
+					    <div class="carousel-caption">                                                                            
+					      <div class="inner">                                            
+					        <h3>Repräsentativ, dynamisch und vernetzt unterwegs.</h3>                                            
+					        <p>Der neue  <span style="font-weight:bold;">BMW 5er</span> ist der perfekte Allround-Firmenwagen für unser Familienunternehmen. 
+					            Dank BMW Connected sind alle wichtigen Termine und Office-Funktionen an Bord, der Wagen
+					            wirkt repräsentativ und dynamisch. Und auch auf unseren privaten Fahrten, z.B. in den Urlaub, ist der 
+					            BMW 5er ideal: agil, geräumig und rundum einfach der perfekte Begleiter.</p>        
+					        <h4>Der neue BMW 5er</h4>                                    
+					                                                                 
+					      </div>                                    
+					    </div>                                
+					  </div>                                
+					<!-- Testimonial Ende -->                             
+
+					</div>                            
+
+
+				<!-- Controls -->                            
+				    <a class="carousel-control-prev" href="#testcar" role="button" data-slide="prev">
+					    <img src="assets/img/Arrow-Left.png" alt="Left">
+					</a>
+					<a class="carousel-control-next" href="#testcar" role="button" data-slide="next">
+					    <img src="assets/img/Arrow-Right.png" alt="Right">
+					</a>                     
+				</div> 
+
+
+				<div class="overlayTop hidden-xs">
+				</div>    
+				<div class="overlayBottom hidden-xs">
 				</div>
-          </div>
+	        </div>
 	    </section>
 
-
-	    <!--Testimony Carosel-->
-	    <div id="quotes">
-
-			<div id="testcar" class="carousel slide" data-ride="carousel">                                                   
-				<!-- Wrapper for slides -->                            
-				<div class="carousel-inner" role="listbox">                                
-				  				  
-				<!-- Testimonial -->
-				  <div class="carousel-item active">                                    
-				    <img src="assets/img/Testimonials/Testimonial_MINI.jpg" alt="MINI">                                    
-				    <div class="carousel-caption">                                                                            
-				      <div class="inner">                                            
-				        <h3>Genau richtig für ein Start-Up.</h3>                                            
-				        <p>Attraktiv, frech und dynamisch – so möchte ich mein Start-Up positionieren. Und der  <span style="font-weight:bold;">MINI 5-Türer</span>
-				            verköpert diese Eigenschaften perfekt und durch die attraktiven Raten konnte ich mir sofort bei Gründung den
-				            idealen Wagen für mich zulegen.</p>                                            
-				        <p class="author">MINI 5-Türer</p>                                      
-				      </div>                                    
-				    </div>                                
-				  </div>                                
-				<!-- Testimonial Ende -->              
-				  
-				<!-- Testimonial -->
-				  <div class="carousel-item">                                    
-				    <img src="assets/img/Testimonials/Testimonial_1er.jpg" alt="BMW 1er">                                    
-				    <div class="carousel-caption">                                                                            
-				      <div class="inner">                                            
-				        <h3>Für einen sportlich-dynamischen Eindruck.</h3>                                            
-				        <p>Als junger Unternehmer ist die richtige Außenwirkung sehr wichtig.  Dabei unterstützt 
-				            mich der <span style="font-weight:bold;">BMW 1er</span> perfekt: Er sorgt für einen sportlichen und modernen Auftritt bei meinen Kunden. 
-				            Denn man sollte nie den Gesamteindruck unterschätzen, den man hinterlässt!</p>              
-				        <p class="author">BMW 1er</p>                                                          
-				      </div>                                    
-				    </div>                                
-				  </div>                                
-				<!-- Testimonial Ende --> 
-
-				<!-- Testimonial -->
-				  <div class="carousel-item">                                    
-				    <img src="assets/img/Testimonials/Testimonial_3er.jpg" alt="BMW 3er">                                    
-				    <div class="carousel-caption">                                                                            
-				      <div class="inner">                                            
-				        <h3>Der Alleskönner von BMW.</h3>                                            
-				        <p>In vielen Berufen braucht man einen Alleskönner. Geräumig und perfekt im Dauereinsatz 
-				            macht der  <span style="font-weight:bold;">BMW 3er Touring</span> alles mit. Das geräumige Interieur mit vielen Ablagemöglichkeiten 
-				            macht jede Fahrt zum Kunden zu einem Kinderspiel und kombiniert dadabei
-				            Funktionalität und Fahrfreude perfekt.</p>                                            
-				        <p class="author">BMW 3er &amp BMW 3er Touring</p>
-				                                           
-				      </div>                                    
-				    </div>                                
-				  </div>                                
-				<!-- Testimonial Ende -->
-
-				<!-- Testimonial -->
-				  <div class="carousel-item">                                    
-				    <img src="assets/img/Testimonials/Testimonial_5er.jpg" alt="BMW 5er">                                    
-				    <div class="carousel-caption">                                                                            
-				      <div class="inner">                                            
-				        <h3>Repräsentativ, dynamisch und vernetzt unterwegs.</h3>                                            
-				        <p>Der neue  <span style="font-weight:bold;">BMW 5er</span> ist der perfekte Allround-Firmenwagen für unser Familienunternehmen. 
-				            Dank BMW Connected sind alle wichtigen Termine und Office-Funktionen an Bord, der Wagen
-				            wirkt repräsentativ und dynamisch. Und auch auf unseren privaten Fahrten, z.B. in den Urlaub, ist der 
-				            BMW 5er ideal: agil, geräumig und rundum einfach der perfekte Begleiter.</p>        
-				        <p class="author">Der neue BMW 5er</p>                                    
-				                                                                 
-				      </div>                                    
-				    </div>                                
-				  </div>                                
-				<!-- Testimonial Ende -->                             
-
-				</div>                            
-
-
-			<!-- Controls -->                            
-			    <a class="carousel-control-prev" href="#testcar" role="button" data-slide="prev">
-				    <img src="assets/img/Arrow-Left.png" alt="Left">
-				</a>
-				<a class="carousel-control-next" href="#testcar" role="button" data-slide="next">
-				    <img src="assets/img/Arrow-Right.png" alt="Right">
-				</a>                     
-			</div> 
-
-
-			<div class="overlayTop hidden-xs">
-			</div>    
-			<div class="overlayBottom hidden-xs">
-			</div>
-
-        </div>
-
-
-
+	    
         <!--FAQ-->
         <section id="FAQ">
         	<div class="container">
@@ -455,9 +459,9 @@
 
 							<div class="card">
 							  <div class="card-header">
-							    <a data-toggle="collapse" data-target="#collapse_01" aria-expanded="true">Kommt ein gewerbliches Angebot (Firmenwagen) für mich in Frage?</a> 
+							    <a data-toggle="collapse" data-target="#collapse_01" aria-expanded="false">Kommt ein gewerbliches Angebot (Firmenwagen) für mich in Frage?</a> 
 							  </div>
-							  <div id="collapse_01" class="collapse show"  data-parent="#FAQ-accordion">
+							  <div id="collapse_01" class="collapse"  data-parent="#FAQ-accordion">
 							    <div class="card-body">
 							      <p>Gewerbliche Fahrzeugangebote kommen für alle Personen in Frage, die als Inhaber, Geschäftsführer, 
 							        Gesellschafter, etc. ein eigenes Unternehmen führen oder gewerblich selbständig tätig sind (auf 
@@ -735,6 +739,10 @@
 
 
 		<section id="Fahrzeugfinder"  class="carousel slide" data-ride="carousel" data-interval="false">
+			<div class="idicator-head">
+				<h3>Vom Startup bis zum Vertriebsmitarbeiter.</h3>
+				<h4>Fahrzeugfinder für Ihr Business.</h4>
+			</div>			
 			<div class="ff-indicator">
 				<div class="container">
 					<div class="owl-carousel owl-theme">
@@ -1566,8 +1574,6 @@
 					     
                                   
 					</div>                                
-                       
-
 
 				<!-- Controls -->                            
 				    <a class="carousel-control-prev" href="#Fahrzeugfinder" role="button" data-slide="prev">
@@ -1707,120 +1713,122 @@
 		          </div>                
 		          <img alt="Autohaus Walter Mulfinger GmbH" src="assets/img/Google-Map-Overlay.png" />            
 		        </div>        
-	        </div>       
-			<div class="container-fluid">
-		      	<div class="row">           
-			        <div class="col-12">                
-			          <img alt="Autohaus Walter Mulfinger GmbH" src="assets/img/Mulfinger-Automobile-Footer.png" />                
-			          <h3>Mulfinger Automobile</h3>                
-			          <p><a href="http://www.mulfinger.de/" target="_blank">www.mulfinger.de</a><br />&nbsp;</p>            
-			        </div>  
+	        </div>
+	        <div class="footerNav">     
+				<div class="container-fluid">
+			      	<div class="row">           
+				        <div class="col-12">                
+				          <img alt="Autohaus Walter Mulfinger GmbH" src="assets/img/Mulfinger-Automobile-Footer.png" />                
+				          <h3>Mulfinger Automobile</h3>                
+				          <p><a href="http://www.mulfinger.de/" target="_blank">www.mulfinger.de</a><br />&nbsp;</p>            
+				        </div>  
 
-			        <div class="col-sm-4 col-lg-2 col-6">                
-			          <p>
-			          	<b>Walter Mulfinger GmbH<br>Backnang</b><br>
-			            Stuttgarter Straße 141<br>
-						71522 Backnang<br>
-						Tel.: 07191 145-0
-			          </p>            
-			        </div>            
-			        <div class="col-sm-4 col-lg-2 col-6">                
-			          <p>										
-			          	<b>Walter Mulfinger GmbH<br>Winnenden</b><br>
-			            Waiblinger Straße 20<br>
-			            71364 Winnenden<br>
-			            Tel.: 07195 97999-0
-			          </p>            
-			        </div>            
-			        <div class="col-sm-4 col-lg-2 col-6">                
-			          <p> 
-			          	<b>Mulfinger GmbH<br>Schorndorf</b><br>
-			            Siechenfeldstraße 28<br>
-			            73614 Schorndorf<br>
-			            Tel.: 07181 7004-0
-			          </p>            
-			        </div>            
-			        <div class="col-sm-4 col-lg-2 col-6">                
-			          <p>
-			          	<b>Walter Mulfinger GmbH<br>Crailsheim</b><br>
-			            Haller Str. 61<br>
-			            74564 Crailsheim<br>
-			            Tel.: 07951 9111-0
-			          </p>            
-			        </div>            
-			        <div class="col-sm-4 col-lg-2 col-6">                
-			          <p><b>Walter Mulfinger GmbH<br>Michelfeld</b><br>
-			            Im Buchhorn 3<br>
-			            74545 Michelfeld<br>
-			            Tel.: 0791 95045-0
-			          </p>            
-			        </div> 
-			        <div class="w-100 d-none d-lg-block"></div>        
-			        <div class="col-sm-4 col-lg-2 col-6 ">                
-			          <p><b>Walter Mulfinger GmbH<br>Ingelfingen</b><br>
-			            Eichendorffstr. 32<br>
-			            74653 Ingelfingen<br>
-			            Tel.: 07940 9245-0
-			          </p>            
-			        </div>            
-			        <div class="col-sm-4 col-lg-2 col-6">                
-			          <p> <b>Mulfinger GmbH<br>Schwäbisch Gmünd</b><br>
-			            Marie-Curie-Straße 11<br>
-			            73529 Schw. Gmünd<br>
-			            Tel.: 07171 6009-10
-			          </p>            
-			        </div>            
-			        <div class="col-sm-4 col-lg-2 col-6">                
-			          <p>  <b>Walter Mulfinger GmbH<br>Essingen</b><br>
-			            Ferdinand-Porsche-Str. 2<br>
-			            73457 Essingen<br>
-			            Tel.: 07365 9606-0
-			          </p>            
-			        </div>            
-			        <div class="col-sm-4 col-lg-2 col-6">                
-			          <p><b>Walter Mulfinger GmbH<br>Heidenheim</b><br>
-			            In den Seewiesen 62<br>
-			            89520 Heidenheim<br>
-			            Tel.: 07321 3580-0
-			          </p>            
-			        </div>            
-			        <div class="col-sm-4 col-lg-2 col-6 ">                
-			          <p><b>Walter Mulfinger GmbH<br>Bopfingen</b><br>
-			            Ellwanger Straße 105<br>
-			            73441 Bopfingen<br>
-			            Tel.: 07362 92236-0
-			          </p>            
-			        </div>            
-			        <div class="col-12">                
-			            <p>Die Angaben zu Kraftstoffverbrauch, CO2-Emission und Stromverbrauch sind abhängig von der gewählten Rad- und Reifengröße. 
-			                Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO2-Emissionen neuer Personenkraftwagen 
-			                können dem 'Leitfaden über den Kraftstoffverbrauch, die CO2-Emissionen und den Stromverbrauch neuer Personenkraftwagen' 
-			                entnommen werden, der an allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH und im Internet unter 
-			                www.dat.de unentgeltlich erhältlich ist.</p>
+				        <div class="col-sm-4 col-lg-2 col-6">                
+				          <p>
+				          	<b>Walter Mulfinger GmbH<br>Backnang</b><br>
+				            Stuttgarter Straße 141<br>
+							71522 Backnang<br>
+							Tel.: 07191 145-0
+				          </p>            
+				        </div>            
+				        <div class="col-sm-4 col-lg-2 col-6">                
+				          <p>										
+				          	<b>Walter Mulfinger GmbH<br>Winnenden</b><br>
+				            Waiblinger Straße 20<br>
+				            71364 Winnenden<br>
+				            Tel.: 07195 97999-0
+				          </p>            
+				        </div>            
+				        <div class="col-sm-4 col-lg-2 col-6">                
+				          <p> 
+				          	<b>Mulfinger GmbH<br>Schorndorf</b><br>
+				            Siechenfeldstraße 28<br>
+				            73614 Schorndorf<br>
+				            Tel.: 07181 7004-0
+				          </p>            
+				        </div>            
+				        <div class="col-sm-4 col-lg-2 col-6">                
+				          <p>
+				          	<b>Walter Mulfinger GmbH<br>Crailsheim</b><br>
+				            Haller Str. 61<br>
+				            74564 Crailsheim<br>
+				            Tel.: 07951 9111-0
+				          </p>            
+				        </div>            
+				        <div class="col-sm-4 col-lg-2 col-6">                
+				          <p><b>Walter Mulfinger GmbH<br>Michelfeld</b><br>
+				            Im Buchhorn 3<br>
+				            74545 Michelfeld<br>
+				            Tel.: 0791 95045-0
+				          </p>            
+				        </div> 
+				        <div class="w-100 d-none d-lg-block"></div>        
+				        <div class="col-sm-4 col-lg-2 col-6 ">                
+				          <p><b>Walter Mulfinger GmbH<br>Ingelfingen</b><br>
+				            Eichendorffstr. 32<br>
+				            74653 Ingelfingen<br>
+				            Tel.: 07940 9245-0
+				          </p>            
+				        </div>            
+				        <div class="col-sm-4 col-lg-2 col-6">                
+				          <p> <b>Mulfinger GmbH<br>Schwäbisch Gmünd</b><br>
+				            Marie-Curie-Straße 11<br>
+				            73529 Schw. Gmünd<br>
+				            Tel.: 07171 6009-10
+				          </p>            
+				        </div>            
+				        <div class="col-sm-4 col-lg-2 col-6">                
+				          <p>  <b>Walter Mulfinger GmbH<br>Essingen</b><br>
+				            Ferdinand-Porsche-Str. 2<br>
+				            73457 Essingen<br>
+				            Tel.: 07365 9606-0
+				          </p>            
+				        </div>            
+				        <div class="col-sm-4 col-lg-2 col-6">                
+				          <p><b>Walter Mulfinger GmbH<br>Heidenheim</b><br>
+				            In den Seewiesen 62<br>
+				            89520 Heidenheim<br>
+				            Tel.: 07321 3580-0
+				          </p>            
+				        </div>            
+				        <div class="col-sm-4 col-lg-2 col-6 ">                
+				          <p><b>Walter Mulfinger GmbH<br>Bopfingen</b><br>
+				            Ellwanger Straße 105<br>
+				            73441 Bopfingen<br>
+				            Tel.: 07362 92236-0
+				          </p>            
+				        </div>            
+				        <div class="col-12">                
+				            <p>Die Angaben zu Kraftstoffverbrauch, CO2-Emission und Stromverbrauch sind abhängig von der gewählten Rad- und Reifengröße. 
+				                Weitere Informationen zum offiziellen Kraftstoffverbrauch und den offiziellen spezifischen CO2-Emissionen neuer Personenkraftwagen 
+				                können dem 'Leitfaden über den Kraftstoffverbrauch, die CO2-Emissionen und den Stromverbrauch neuer Personenkraftwagen' 
+				                entnommen werden, der an allen Verkaufsstellen und bei der Deutschen Automobil Treuhand GmbH und im Internet unter 
+				                www.dat.de unentgeltlich erhältlich ist.</p>
 
-						<p>Dies ist eine Webseite der Walter Mulfinger GmbH (Stuttgarter Straße 141, 71522 Backnang). Elektronischer Kontakt: info@mulfinger.de<br />
-							Vertretungsberechtigte: Ulrich Mulfinger, Markus Mulfinger.	Handelsregister und Registergericht: Amtsgericht Stuttgart,
-							Handelsregisternummer: 270316, Umsatzsteueridentifikationsnummer:  DE 144739024</p>
+							<p>Dies ist eine Webseite der Walter Mulfinger GmbH (Stuttgarter Straße 141, 71522 Backnang). Elektronischer Kontakt: info@mulfinger.de<br />
+								Vertretungsberechtigte: Ulrich Mulfinger, Markus Mulfinger.	Handelsregister und Registergericht: Amtsgericht Stuttgart,
+								Handelsregisternummer: 270316, Umsatzsteueridentifikationsnummer:  DE 144739024</p>
 
-			            <p> Fotonachweis der verwendeten Bilder (fotolia.com): &copy;Sergey Nivens (77517668), &copy;Uber Images (85651257), &copy;goodluz (111087415), &copy;Rawpixel.com (119663523),
-			             	&copy;1001color (132824686), &copy;georgerudy (142586190), &copy;sepy (61787757), &copy;goodluz (58883518).</p>  
-			                
-			            <p><strong> Bei den auf dieser Webseite zur Verfügung gestellten Informationen handelt es sich nicht um Steuerberatung gemäss dem 
-			            			Steuerberatungsgesetz und damit verbundenen Gesetzen. Diese Webseite dient lediglich als unverbindliche Informationsquelle 
-			                        und kann eine persönliche Beratung durch Ihren Steuerberater nicht ersetzen. Die Inhalte unserer Seiten wurden mit größter 
-			                        Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. 
-									Haftungsansprüche wegen Schäden, die durch den Gebrauch der auf dieser Internetseite wiedergegebenen Informationen entstehen, 
-			                        sind ausgeschlossen, sofern seitens des Webseitenbetreibers kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden 
-			                        vorliegt. Der vorgenannte Haftungsausschluss und Haftungsbeschränkungen gelten nicht im Falle der Verletzung des Lebens, 
-			                        des Körpers oder der Gesundheit. 
-			            </strong></p>  <br> <br>
-			          	<div class="footer-link">
-				            <a target="_blank" href="http://mulfinger.de/de/impressum">Vollständiges Impressum</a> | 
-				            <a target="_blank" href="http://mulfinger.de/de/impressum/datenschutz">AGB/Datenschutz</a>
-			            </div>            
-			        </div>      
-		      	</div> 
-		    </div>	   
+				            <p> Fotonachweis der verwendeten Bilder (fotolia.com): &copy;Sergey Nivens (77517668), &copy;Uber Images (85651257), &copy;goodluz (111087415), &copy;Rawpixel.com (119663523),
+				             	&copy;1001color (132824686), &copy;georgerudy (142586190), &copy;sepy (61787757), &copy;goodluz (58883518).</p>  
+				                
+				            <p><strong> Bei den auf dieser Webseite zur Verfügung gestellten Informationen handelt es sich nicht um Steuerberatung gemäss dem 
+				            			Steuerberatungsgesetz und damit verbundenen Gesetzen. Diese Webseite dient lediglich als unverbindliche Informationsquelle 
+				                        und kann eine persönliche Beratung durch Ihren Steuerberater nicht ersetzen. Die Inhalte unserer Seiten wurden mit größter 
+				                        Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. 
+										Haftungsansprüche wegen Schäden, die durch den Gebrauch der auf dieser Internetseite wiedergegebenen Informationen entstehen, 
+				                        sind ausgeschlossen, sofern seitens des Webseitenbetreibers kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden 
+				                        vorliegt. Der vorgenannte Haftungsausschluss und Haftungsbeschränkungen gelten nicht im Falle der Verletzung des Lebens, 
+				                        des Körpers oder der Gesundheit. 
+				            </strong></p>  <br> <br>
+				          	<div class="footer-link">
+					            <a target="_blank" href="http://mulfinger.de/de/impressum">Vollständiges Impressum</a> | 
+					            <a target="_blank" href="http://mulfinger.de/de/impressum/datenschutz">AGB/Datenschutz</a>
+				            </div>            
+				        </div>      
+			      	</div> 
+			    </div>
+		    </div>  	   
 		</footer>
 		
 	</div><!--Main Area-->
