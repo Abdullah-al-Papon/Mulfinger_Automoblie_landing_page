@@ -4,15 +4,9 @@
 */
 
 $(document).ready(function(){
+    "use strict";
 
-
-    
-    $('.nav-tabs a').click(function (e) {
-      
-      $(this).tab('show');
-      e.preventDefault();
-    })  
-    
+    /*====Infoportal====*/
     $('#Infoportal .nav-tabs a[data-toggle="tab"] ').on('shown.bs.tab', function (e) {
         var href = $(this).attr('href');
         $('html, body').animate({
@@ -21,16 +15,22 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
+    /*====Fahrzeugfinder====*/
+    $(function(){
+        var href = $('#Fahrzeugfinder div[data-target="#Fahrzeugfinder"] ');
 
-    $('#Fahrzeugfinder div[data-target="#Fahrzeugfinder"] ').on('click', function (e) {
-        var href = $(this);
-        $(href).addClass('in').siblings().removeClass('in');
+        $(href).parent(':first-child').addClass('in');
+        $(href).on('click', function (e) {
+            var href = $(this);
+            $(href).parent().addClass('in').siblings().removeClass('in');
 
-        var loc = $('.offercar');
-        $('html, body').animate({
-            scrollTop: $(loc).offset().top
-        }, 'slow');
-        e.preventDefault();
+            var loc = $('.offercar');
+            $('html, body').animate({
+                scrollTop: $(loc).offset().top-100
+            }, 'slow');
+            e.preventDefault();
+        });
+
     });
 
     /*Owl Carosel*/
@@ -54,12 +54,9 @@ $(document).ready(function(){
                 loop:false
             }
         }
-    })
-
-
+    });
 
     /*====Striky Navbar====*/
-  
     $(window).scroll(function() {
     if ($(this).scrollTop() > 50){  
         $('header > nav').addClass("sticky");

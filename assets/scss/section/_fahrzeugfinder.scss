@@ -1,0 +1,155 @@
+#Fahrzeugfinder{
+	padding: 100px 0;
+
+	.idicator-head{
+		font-family: $serif;
+		background: url("../img/Fahrzeugfinder-BgTop.png") no-repeat;
+		background-position: top center;
+		padding: 50px 0 50px 5%;
+		h3{
+			color: $textColor4;
+			font-size: 1.5em;
+		}
+		h4{
+			color: $mainColor;
+			font-size: 1.5em;
+		}
+	}
+	/*idicator Arrows*/
+	.ff-indicator{
+		h2 {
+			font-size: 1.3125em;
+    		font-weight: 700;
+    	}
+
+    	.owl-item.in{
+    		&:after{
+				width: 0;
+			    height: 50px;
+			    border-bottom: 24px solid #0e5e72;
+			    border-left: 24px solid transparent;
+			    border-right: 24px solid transparent;
+			    content: "";
+			    display: block;
+			    margin: 0 auto;
+		    }
+    	}
+		.owl-prev{
+		    left: -30px;
+		    background: url("../img/Arrow-Left.png") no-repeat;
+		    background-size: 100% 100%;
+		}
+		.owl-next{
+		    background: url(../img/Arrow-Right.png) no-repeat;
+		    right: -30px;
+			background-size: 100% 100%;
+		}
+		.owl-prev, .owl-next{
+			position: absolute;
+			top: 25%;
+		    height: 35.56px;
+		    width: 18.33px;
+		}	
+	}
+
+
+	/*Fahrzeugfinder Content Carosel*/
+	.offercar{
+		background: $mainColor;
+		padding: 60px 0 85px;
+		.innerOffer {
+		    position:  relative;
+		    background: #fff;
+		    width: 90%;
+		    display:  block;
+		    margin:  0 auto;
+		}
+		
+		.carousel-item{
+			background: #fff;
+			img{
+				width: 100%;
+			}
+			.carousel-caption{
+			    color: $textColor;
+			    position: static;
+			    text-align: left;
+				margin-top: -100px;
+			    h3{
+			    	color: $textColor;
+			    	font-size: 1.3em;
+			    	font-weight: 700;
+			    }
+			    img{
+			    	width: auto;
+			    }
+			}
+			.oc-PriceDetail{
+				.left-detail{
+					&:last-child{
+						border-bottom: 1px solid #ccc;
+					}
+				}
+				.each-opd{
+					overflow: hidden;
+					border-top: 1px solid #ccc;
+					label{
+						overflow: hidden;
+						margin: 0;
+						width: 70%;
+						float: left;
+					}
+					p{
+						overflow: hidden;
+						margin: 0;
+						width: 30%;
+						float: left;
+						text-align: right;
+					}
+				}
+
+				.angebotsblatt{
+					display: block;
+				    width: 70%;
+				    margin: 0px 0px 30px 0px;
+				    padding: 8px 10px 8px 10px;
+				    line-height: 1.2em;
+				    float: right;
+				    text-align: left;
+				    background: $mainColor;;
+				    color: #fff;
+				}
+			}
+		}
+		.carousel-control-prev {
+		    left: 20px;
+		}
+		.carousel-control-next {
+		    right: 20px;
+		}
+		.carousel-control-next, .carousel-control-prev {
+		    position: absolute;
+		    top: 50%;
+		    bottom: 0;
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: inherit;
+		    -webkit-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+		    -webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		    width: 50px;
+		    color: #fff;
+		    text-align: center;
+		    opacity: .5;
+		    height: 70px;
+		}
+		
+	}
+
+
+}
+
+

@@ -1,0 +1,116 @@
+#News{
+	font-family: $serif;
+	margin: 150px 0 100px;
+	h3{
+		color: $textColor4;
+		font-size: 1.5em;
+	}
+	h4{
+		color: $mainColor;
+		font-size: 1.5em;
+	}
+}
+
+/*Newsletter-Amelldung Section*/
+#Newsletter-Anmeldung{
+	padding: 100px 0 100px;
+	background: $mainColor;
+	.left-NA{
+		padding: 20px 70px 0 0px;
+		p{
+			color: $fahzeugfinder_light;
+			font-size: 0.9375em;
+			line-height: 1.15;
+			margin-left: 20px;
+		}
+	}
+
+	.right-NA{
+		margin: 40px 0 0;
+
+		label{
+			color:#fff;
+			font-size: 1em;
+			margin: 5px 0 0;
+			display: block;
+			font-weight: 700;
+		}
+		input{
+			opacity: 0.7;
+		    background: $fahzeugfinder_light;
+		    color: $mainColor;
+		    font-size: .875em;
+		    border: 1px solid $mainColor;
+		    padding: 5px;
+		    margin: 5px 0px 8px 0px;
+		    border-radius: 2px;
+		    width: 100%;
+			&:focus{
+				opacity: 1;
+			}
+		}
+		.submit_container{
+			text-align:center;
+			margin: 20px 0 0;
+			.cr_button{
+				color: $mainColor;
+				background: $fahzeugfinder_light;
+				border: 0;
+				border-radius: 4px;
+				padding: 5px 20px;
+				opacity: .7;
+				font-weight: 700;
+				cursor: pointer;
+				&:hover{
+					background: #fff;
+					opacity: 1;
+				}
+			}
+		}
+
+	}
+}
+
+/*Kontakt_AP asection*/
+#Kontakt_AP{
+	font-family: $serif;
+	padding: 150px 0 200px;
+	h3{
+		color: $textColor4;
+		font-size: 1.5em;
+	}
+	h4{
+		color: $mainColor;
+		font-size: 1.5em;
+	}
+	.kontaktDetail{
+		margin: 80px 0 0;
+	}
+	.eachKDetail{
+		overflow: hidden;
+		margin: 0 0 5px;
+		label{
+			font-weight: 700;
+			margin: 0;
+			font-family: $sansSerif;
+			float: left;
+			width: 18%;
+			overflow: hidden;
+		}
+		p{
+			overflow: hidden;
+			float: left;
+			width: 82%;
+			margin: 0;
+			font-size: 1.25em;
+			font-style: italic;
+			color: $mainColor;
+			span{
+				font-family: $sansSerif;
+				font-style: normal;
+				color: $textColor2;
+				font-size: .8em;
+			}
+		}
+	}
+}

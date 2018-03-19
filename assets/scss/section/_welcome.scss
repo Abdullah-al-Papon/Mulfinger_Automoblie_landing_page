@@ -1,0 +1,53 @@
+#welcome {
+    padding: 56% 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+	background-position: 100% 100%;
+    background-color: $textColor2;
+    .wContent{
+    	position: absolute;
+    	left: 10%;
+    	Top: 150px;
+    	    background-color: rgba(255, 255, 255, 0.9);
+		    padding: 35px;
+		    margin-bottom: 300px;
+		    width: 480px;
+		    text-align: center;
+
+    	h2{
+    		font-size: 6em;
+    		margin: 0;
+    		line-height: 0.78125em;
+    		font-weight: 700;
+    		text-align: justify;
+    		text-transform: uppercase;
+    		span{
+    			font-size: 1.25em;
+    			line-height: .916em;
+    			display: block;
+    		}
+    	}
+    	p{
+    		color: $textColor3;
+		    margin: 0 0 10px;;
+		    font-size: 0.8125em;
+		    text-align: justify;
+		    text-align-last: justify;
+		    text-transform: uppercase;
+    	}
+    	.box-btn {
+			margin: 0px -45px -65px -5px;
+	    	a {
+
+			    display: block;
+			    padding: 8px 10px 8px 10px;
+			    line-height: 1.2em;
+			    text-align: left;
+			    background: $mainColor;
+			    cursor: pointer;
+			    color: #fff;
+			}
+		}
+    }
+}

@@ -1,0 +1,90 @@
+#FAQ{
+	padding: 100px 0px 0;
+	margin: 0 0 150px;
+	h2{
+		font-size: 2em;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    color: $textColor2;
+	    line-height: 1.1em;
+	    margin: 0;
+		strong{
+			font-size: 1.2em;
+    		text-transform: none;
+			color:$mainColor;
+		}
+	}
+	h4{
+		font-size: 1.3em;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    color: $textColor2;
+	    margin: 0 0 25px;
+	}
+
+	.card{
+		border: 0px solid #fff;
+
+		.card-body{
+			padding: 10px 0;
+		}
+		.card-header{ 
+			background: #fff;
+			padding: 8px 0;
+			position: relative;
+			border: 0px;
+			&:after{
+				content: "";
+				position: absolute;
+				left:0;
+				bottom: 0;
+				height: .5px;
+				width: 100%;
+	    		background: -moz-linear-gradient(left, #eee 1%, #aaa 25%, #aaa 60%, #eee 100%);
+				background: -webkit-linear-gradient(left, #eee 1%,#aaa 25%,#aaa 60%,#eee 100%);
+				background: linear-gradient(to right, #eee 1%,#aaa 25%,#aaa 60%,#eee 100%);
+			}
+
+	    	a{
+		
+				&:hover{
+			    	color: $mainColor;
+			    }
+		    	&[data-toggle="collapse"]{
+				    cursor: pointer;
+				    font-size: 1.4em;
+				    font-weight: bold;
+				    text-transform: uppercase;
+				    color: $mainColor;
+				}
+				&[data-toggle="collapse"]:after {
+				    font-family: 'Font Awesome\ 5 Free';
+				    font-weight: 700;
+				    position: absolute;
+				    right: 0px;
+				    border: 2px solid $mainColor;
+				    border-radius: 50%;
+				    width: 24px;
+				    height: 24px;
+				    text-align: center;
+				    line-height: 21px;
+				    font-size: .5em
+				}
+				&[aria-expanded="true"]:after {  
+				  content: "\f00d";
+				  border: 2px solid $textColor2;
+				  color: $textColor2;
+				}
+				&[aria-expanded="false"]:after {
+				  content: "\f067";
+				}
+			}
+		}
+	}
+    
+}
+
+
+
+
+

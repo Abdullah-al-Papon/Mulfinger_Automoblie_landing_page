@@ -1,50 +1,16 @@
+@import "vendor/bootstrap";
 @import "variables";
-@import "_default";
+@import "section/_default";
 
-@import "_header";
-@import "_welcome";
-@import "_infoportal";
-@import "_faq";
-@import "_fahrzeugfinder";
+@import "section/_header";
+@import "section/_welcome";
+@import "section/_infoportal";
+@import "section/_faq";
+@import "section/_fahrzeugfinder";
 
-@import "_other";
+@import "section/_other";
+@import "section/_footer";
+@import "section/_responsive";
 
-@import "_footer";
-
-
-
-
-
-
-
-
-
-
-.googleMapArea{
-	position: relative;
-}
-.googleMapArea iframe{
-	width: 100%;
-	height: 800px;
-}
-
-.map-overlay {
-    position:  absolute;
-    top:  0px;
-    right:  0px;
-    left:  0px;
-}
-.map-overlay .fill {
-    height:  50px;
-    width:  100%;
-    background-color:  white;
-}
-.map-overlay img {
-    width:  100%;
-    height:  auto;
-}
-
-
-/*FaQ*/
 
 
